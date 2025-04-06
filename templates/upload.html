@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Dataset CSV</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Dataset CSV</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label>Pilih file CSV:</label>
+            <input type="file" name="file" accept=".csv" required>
+            <button type="submit">Upload dan Prediksi</button>
+        </form>
+        <p><a href="{{ url_for('index') }}">Kembali ke Input Manual</a></p>
+    </div>
+</body>
+</html>
